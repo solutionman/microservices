@@ -15,7 +15,7 @@ jdbc:postgresql://localhost:5432/postgres
 user:lom  
 pass:password  
 
-in PGadmin create new database "customer"
+in PGadmin or IDEA create databases "customer" and "scammer"
 ![](pics/customerDB.png)
 
 run CustomerApplication with IDEA
@@ -31,4 +31,8 @@ Body: raw JSON
 }
 ![](pics/PostmanSendCustomer.png)
 
+in customer database:
 SELECT * FROM customer;
+
+in scammer database:
+SELECT * FROM scammer_check_history;

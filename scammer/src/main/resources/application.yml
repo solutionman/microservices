@@ -4,3 +4,15 @@ server:
 spring:
   application:
     name: scammer
+  datasource:
+    username: 'lom'
+    password: 'password'
+    url: jdbc:postgresql://localhost:5432/scammer
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
